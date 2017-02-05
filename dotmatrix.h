@@ -44,23 +44,23 @@ static void DotMatrixParse(int dataParsed[], const int dataRaw[], const int inde
 // 위에서 아래로 출력한다
 // 인자로 넘어가는 데이터 10개는 각각 도트매트릭스의 한 행을 의미한다
 static void DotMatrixDisplay(const int data[10]) {
-	int i;
+//	int i;
 	static int currLine = 0; // 현재 행 선택
-	for(i=0;i<10;i++){ // 10회 : 10줄 : 10행 : 한 화면 : 1주기
+//	for(i=0;i<10;i++){ // 10회 : 10줄 : 10행 : 한 화면 : 1주기
 		//(한 줄 출력 시작) 
 		EX_DM_SEL = (1<<currLine); // 행 선택
 		EX_DM_DATA = data[currLine++]; // 그 행에 데이터를 출력
 		if(currLine>9) currLine=0; // 끝까지 출력되었으면 행 넘김
 		//(한 줄 출력 끝)
 		_delay_ms(1); // 세븐세그먼트랑 다르게 선명하게 나온다
-	}
+//	}
 }
 
 extern void DotMatrixDrawDoor(int doorOpeningLevel) { // 열린 정도가 인자다
-	int i;
-	for(i=0;i<4;i++){
+//	int i;
+//	for(i=0;i<4;i++){
 		DotMatrixDisplay(doorFromCloseToOpen[doorOpeningLevel]);
-	}
+//	}
 }
 
 // 한 함수마다 한 칸씩이다.
@@ -68,12 +68,12 @@ extern void DotMatrixDrawDoor(int doorOpeningLevel) { // 열린 정도가 인자다
 extern void DotMatrixUpping(char stay){
 	static char cursor = 0;
 
-	int i;
+//	int i;
 	int dataParsed[10];
 	DotMatrixParse(dataParsed, arrowUp, cursor, 10); // 커서 기준으로 10개 끊어 담는다
-	for(i=0;i<4;i++){
+//	for(i=0;i<4;i++){
 		DotMatrixDisplay(dataParsed); // 10밀리세컨드 주기 화면 표현을 횟수만큼 실행하고 다음으로 넘어간다
-	}
+//	}
 
 	if(stay != OFF){
 		if(cursor < 5){
@@ -87,12 +87,12 @@ extern void DotMatrixUpping(char stay){
 extern void DotMatrixDowning(char stay){
 	static char cursor = 5;
 	
-	int i;
+//	int i;
 	int dataParsed[10];
 	DotMatrixParse(dataParsed, arrowDown, cursor, 10);
-	for(i=0;i<4;i++){
+//	for(i=0;i<4;i++){
 		DotMatrixDisplay(dataParsed);
-	}
+//	}
 
 	if(stay != OFF){
 		if(cursor > 0){

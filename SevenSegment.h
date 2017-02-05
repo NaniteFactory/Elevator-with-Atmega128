@@ -44,13 +44,13 @@ static void SevenSegmentDisplay(unsigned char n3, unsigned char n2, unsigned cha
 }//display()
 
 extern void SevenSegmentDisplayFloor(char floor){
-	int i;
-	for(i=0;i<4;i++){
+//	int i;
+//	for(i=0;i<4;i++){
 		SevenSegmentDisplay(
 			0, 0, 
 			characterSetForDisplaying[(int)floor], 
 			characterSetForDisplaying[F],
 			2
 		);
-	}
+//	}
 } 
