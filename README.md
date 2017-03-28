@@ -1,19 +1,19 @@
-# elevator-with-atmega128
+# Elevator-with-Atmega128
 
-°³¿ä
-- 2016³â 6¿ù / 3ÇÐ³â 1ÇÐ±â
-- '¸¶ÀÌÅ©·ÎÇÁ·Î¼¼¼­ ÀÀ¿ë' ¼ö¾÷ ÅÒ ÇÁ·ÎÁ§Æ®
-- ½Â°­±â(¿¤·¹º£ÀÌÅÍ) ±¸Çö
+## ê°œìš”
+- 2016ë…„ 6ì›” / 3í•™ë…„ 1í•™ê¸°
+- 'ë§ˆì´í¬ë¡œí”„ë¡œì„¸ì„œ ì‘ìš©' ìˆ˜ì—… í…€ í”„ë¡œì íŠ¸
+- ìŠ¹ê°•ê¸°(ì—˜ë ˆë² ì´í„°) êµ¬í˜„
 
-Interface
+## Interface
 - Input: Push button switch
 - Output: LED, LCD, Seven-segment display, Dot matrix, Speaker, Stepping motor
 
-±â´É
-- ¸ðÅÍ: ¿À¸£³»¸®´Â ÀÌµ¿À» Á¦¾î
-- ¼¼ºì¼¼±×¸ÕÆ®: ÇöÀç ¿¤·¹º£ÀÌÅÍ°¡ À§Ä¡ÇÑ Ãþ¼ö Ç¥½Ã
-- µµÆ®¸ÅÆ®¸¯½º: ½Â°­±â°¡ ÀÌµ¿ÁßÀÏ ¶§ ¹æÇâÀ» ³ªÅ¸³»´Â È­»ìÇ¥ ¾Ö´Ï¸ÞÀÌ¼Ç°ú ¹® ¿­¸²/´ÝÈû ¾Ö´Ï¸ÞÀÌ¼Ç Ç¥Çö
-- ½ºÇÇÄ¿: ¸ñÀûÃþ µµÂø½Ã ¾È³»À½
-- ¹öÆ°½ºÀ§Ä¡: Ãþ ¼±ÅÃ, ¹® ¿­¸² ´ÝÈû ¹öÆ°
-- LCD: ¼±ÅÃµÈ ¸ñÀûÃþ Ç¥½Ã, ¿¤·¹º£ÀÌÅÍÀÇ ÀÌµ¿ ¹æÇâ Ç¥½Ã (UP / DOWN / NEUTRAL)
-- LED: ¼±ÅÃµÈ ¸ñÀûÃþ Ç¥½Ã
+## ê¸°ëŠ¥
+- ëª¨í„°: ì˜¤ë¥´ë‚´ë¦¬ëŠ” ì´ë™ì„ ì œì–´
+- ì„¸ë¸ì„¸ê·¸ë¨¼íŠ¸: í˜„ìž¬ ì—˜ë ˆë² ì´í„°ê°€ ìœ„ì¹˜í•œ ì¸µìˆ˜ í‘œì‹œ
+- ë„íŠ¸ë§¤íŠ¸ë¦­ìŠ¤: ìŠ¹ê°•ê¸°ê°€ ì´ë™ì¤‘ì¼ ë•Œ ë°©í–¥ì„ ë‚˜íƒ€ë‚´ëŠ” í™”ì‚´í‘œ ì• ë‹ˆë©”ì´ì…˜ê³¼ ë¬¸ ì—´ë¦¼/ë‹«íž˜ ì• ë‹ˆë©”ì´ì…˜ í‘œí˜„
+- ìŠ¤í”¼ì»¤: ëª©ì ì¸µ ë„ì°©ì‹œ ì•ˆë‚´ìŒ
+- ë²„íŠ¼ìŠ¤ìœ„ì¹˜: ì¸µ ì„ íƒ, ë¬¸ ì—´ë¦¼ ë‹«íž˜ ë²„íŠ¼
+- LCD: ì„ íƒëœ ëª©ì ì¸µ í‘œì‹œ, ì—˜ë ˆë² ì´í„°ì˜ ì´ë™ ë°©í–¥ í‘œì‹œ (UP / DOWN / NEUTRAL)
+- LED: ì„ íƒëœ ëª©ì ì¸µ í‘œì‹œ
